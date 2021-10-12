@@ -10,7 +10,7 @@
  *{
     margin:0;
     padding:0;
-    
+ 
  }
  
 
@@ -258,94 +258,66 @@ input{
     opacity: 0.8;
     
 }
+
 .container-4{
     
-    margin-top: 200px;
-    position: relative;
+    margin-top: 100px;
     width: 1280px;
-    height: 1500;
-    background-color: gray;
-
-}
-
-.new{ 
-    position: absolute;
     display: flex;
-    margin-left: 150px;
+   
+   
 }
-
-.jacket{
+.column-1{
     overflow: hidden;
+    margin-left: 150px
 }
 
-.jacket > img:hover{
-    transform:scale(1.2,1.2);transition: all 0.5s ease-out;
-}
-.new-2{  position: absolute;
-    display: flex;
-    margin:500px 0 0 750px;
+.column-1 > img:hover{ transform:scale(1.2,1.2);transition: all 0.5s ease-out;
 
 }
-
-.jacket-2{
-    overflow: hidden;
+.column-2{
+width: 300px;
+height: 300px;
+background-color: #d6d970;
+text-align: center;
+font-size: 20px;
+margin-top: 75px;
 }
 
-.jacket-2 > img:hover{
-    transform:scale(1.2,1.2);transition: all 0.5s ease-out;
-}
-
-
-.autumn{
-    background-color: #d6d970;
-    width: 300px;
-    height: 300px;
-    text-align: center;
-    margin-top: 60px;
-    font-size: 20px;
-    color: #556168;
-    font-family: Arial, Helvetica, sans-serif;
-
-}
-
-
-.autumn.p{
-    color: #556168;
-}
-.dollars{
-    font-size: 25px;
-    
-}
-.autumn:hover{
+.column-2:hover{
     background-color: #ccd8b0;
 }
 
 
 
-
-
-.autumn-2{
-    background-color: #d6d970;
-    width: 300px;
-    height: 300px;
-    text-align: center;
-    margin: 80px 0px 0px 0px;
-    font-size: 20px;
-    color: #556168;
-    font-family: Arial, Helvetica, sans-serif;
-
+.container-5{  
+    display: flex;
 }
 
+.column-3{
+width: 300px;
+height: 300px;
+background-color: #d6d970;
+text-align: center;
+font-size: 20px;
+margin-top: 75px;
+margin-left: 750px;
+}
 
-.autumn-2:hover{
+.column-3:hover{
     background-color: #ccd8b0;
 }
 
-.container-5{
-margin-top: 1250px;
+.column-4{
+    overflow: hidden;
+}
 
+.column-4 > img:hover{
+    transform:scale(1.2,1.2);transition: all 0.5s ease-out;
+}
 
-
+.container-6{
+    margin-top: 100px;
 }
 .recycle{
     width: 1200px;
@@ -538,57 +510,48 @@ margin-top: 1250px;
 
 
             <div class="container-4">
+                    <div class="column-1">
+                        <img src="Jackets.jpg" width="300" height="450" alt="">
+                    </div>
 
-                <div class="new">
+                    <div class="column-2">
+                        <h2><a href="">2021秋季新款</a></h2><br><br><br>
+                        <p><a href="">特級極輕 再生羽絨外套</a></p><br>
+                        <p><span class="dollars">NT $ 3290</span></p>
+                    </div>
+            </div>
 
-                <div class="jacket">
-                <img src="Jackets.jpg" width="300" height="450" alt="">
-                </div>
 
-                <div class="autumn">
-                <h2><a href="">2021秋季新款</a></h2><br><br><br>
-                <p><a href="">特級極輕 再生羽絨外套</a></p><br>
-                <p><span class="dollars">NT $ 3290</span></p>
-                </div>
-                <div class="box"></div>
+                <div class="container-5">
 
-                </div>
-
-                <div class="new-2">
-
-                    <div class="autumn-2">
+                    <div class="column-3">
                         <h2><a href="">2021秋季新款</a></h2><br><br><br>
                         <p><a href="">抗UV連帽外套</a></p><br>
                         <p><span class="dollars">NT $ 1290</span></p>
                     </div>  
-                    <div class="box"></div>
+                   
                     
-                    <div class="jacket-2">
+                    <div class="column-4">
                         <img src="jacket2.jpg" width="300" height="450" alt="">
                     </div>
 
-               
                 </div>
 
-            </div>
+                <div class="container-6">
+                    <div class="recycle">
 
+                        <div class="hope">
+                            <h2>我們的環保願景</h2><br><br><br>
+                            <p>全面禁止店內的塑膠袋<br>並改用環保紙質做成的付費加價購物袋<br>依據世界各地的弱勢族群、急難受災地區提供必要衣物<br>衣物回收後的羽絨、羽毛，則再生成為全新商品。</p>
+                        </div>  
 
-            <div class="container-5">
-                <div class="recycle">
+                        <div class="pic">
+                            <img src="recycle.jpg" width="600" height="300" alt="">
+                        </div>
 
-                    <div class="hope">
-                        <h2>我們的環保願景</h2><br><br><br>
-                        <p>全面禁止店內的塑膠袋<br>並改用環保紙質做成的付費加價購物袋<br>依據世界各地的弱勢族群、急難受災地區提供必要衣物<br>衣物回收後的羽絨、羽毛，則再生成為全新商品。</p>
-                    </div>  
-
-                    <div class="pic">
-                        <img src="recycle.jpg" width="600" height="300" alt="">
                     </div>
 
-               
                 </div>
-
-            </div>
 
 
             <div class="footer">
@@ -617,11 +580,6 @@ margin-top: 1250px;
                 email:  mountain.journey@gmail.com.tw</p>
                 <p>Copyright © 2021 M.Journey all rights reserved.</p>
                 </div>
-
-              
-
-               
-
             </div>
 </body>
 </html>
