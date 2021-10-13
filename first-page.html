@@ -6,28 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mountain journey</title>
 <style>
- 
- *{
+  *{
     margin:0;
     padding:0;
- 
+   
  }
  
 
-
+body{
+    background-color: #E8E8D0;
+}
 a{text-decoration: none;}
-
 a{color:#556168;}
 h2{color: #556168;}
 h3{color: #556168;}
 p{color: #556168;}
+
 
 .wrap{
     
   border: #ccc 1px solid;
   display: inline-block;
   font-family:  Arial, Helvetica, sans-serif;
-
   font-size: 13px;
 }
 
@@ -47,29 +47,27 @@ ul.wrap>li {
   /* 只有第一層是靠左對齊*/
 }
 
-ul.wrap a {
+ul.wrap  {
   background-color: #ccd8b0;
   color: #333;
   display: block;
   padding: 0 10px;
   text-decoration: none;
   line-height: 40px;
+  
 }
 
 ul.wrap a:hover {
   /* 滑鼠滑入按鈕變色*/
   background-color: #d6d970;
-  color: #fff;
+ 
 }
 
-ul.wrap li:hover>a {
-  /* 滑鼠移入次選單上層按鈕保持變色*/
-  background-color: #d6d970;
-  color: #fff;
-}
+
 
 ul.wrap ul {
-  border: #ccc 1px solid;
+  border:  1px solid #556168;
+  background-color: #ccd8b0;
   position: absolute;
   z-index: 99;
   left: -1px;
@@ -85,12 +83,6 @@ ul.wrap ul li:last-child {
   border-bottom: none;
 }
 
-ul.wrap ul ul {
-  /*第三層以後的選單出現位置與第二層不同*/
-  z-index: 999;
-  top: 10px;
-  left: 90%;
-}
 
 ul.wrap ul {
   /*隱藏次選單*/
@@ -103,38 +95,50 @@ ul.wrap li:hover>ul {
 
 }
 
-.header{
+.header-style{
+    width: 100%;
     display: flex;
     background-color: #ccd8b0;
-    
+    justify-content: center;
 }
-
-.logo{
-margin:20px 0px 0px 40px;
-
-}
-
-
 
 .nav{
+    width: 100px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-2{
+    width: 700px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-3{
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    align-items: center;
+}
+
+
+.lab{
+    list-style: none;
+    padding: 25px;
+    margin-top: 15px;
+    color: #556168;
+    font-size: 20px;
+
+}
+
+.lab:hover{
+    font-weight: bold;
+    text-decoration: underline;
    
 }
 
-.wrap{
-    display: flex;
-    margin-left: 150px;
-}
-.about{
-    display: flex;
-    margin-left: 100px;
-}
-
-.about :hover{
-    background-color:#d6d970;
-}
-
-.lab{
+.lab-2{
     list-style: none;
     padding: 25px;
     margin-top: 15px;
@@ -143,47 +147,37 @@ margin:20px 0px 0px 40px;
     text-decoration:none;  
 }
 
-
-.input{
-    margin-left: 100px;
-    margin-top: 25px;
-    height: 50px;
-    display: flex;
-  
- 
-}
-
-.icon{
-    display: flex;
-    align-items: flex-end;
-}
-
-.picture{
-    display: flex;
-    justify-content: center;
-    margin-top: 200px;
-}
-
 .title{
     text-align: center;
 }
 
 label{
     font-size: 20px;
-    
-    
 }
+
 
 input{
     font-size: 20px;
     margin-top: 20px;
 }
-.container > img{
-width: 100%;
 
+
+.bread-style{
+    list-style: none;
+    display: flex;
+    justify-content: left;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
    
+    
 }
-
+ 
+.title-pic{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 .container-2{
@@ -197,25 +191,28 @@ width: 100%;
 
 .story{
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
+    width: 1200px;
+    justify-content: center;
   
 }
 
 
 .text{
     color: #556168;
-    width: 700px;
-    height: 350px;
+    width: 600px;
+    height: 300px;
     background-color: #ccd8b0;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
 
 }
 
-
-.text :hover{
+.seemore > a >p{
+    font-weight: bold;
+}
+.seemore > a >p:hover{
     background-color: #d6d970;
+   
 }
 
 .title-2{
@@ -231,54 +228,67 @@ width: 100%;
     
 }
 
-.item > img{
-    box-shadow: 2px 2px 2px 2px #556168;
+.item:hover{
+    background-color: #d6d970;
 }
 
-.item > h3{
-    font-family: Arial, Helvetica, sans-serif;
+.item > img{
+    box-shadow: 2px 2px 2px 2px #556168;
+    opacity: 0.8;
+    height: 100%;
+}
 
+.word{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+    height: 55px;
+ 
 }
 
 .container-3{
-    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccd8b0;
     
 }
 .category{
-    background-color: #ccd8b0;
+    width: 1200px;
+    height: 500px;
     display: flex;
-    justify-content: space-evenly;
-    margin-left: auto;
-    margin-right: auto;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.category :hover{
- background-color: #d6d970;
-}
 
-.item > img{
-    opacity: 0.8;
-    
-}
 
+
+
+.container-style{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
 .container-4{
     
     margin-top: 100px;
-    width: 1280px;
+    width: 1200px;
     display: flex;
-   
-   
 }
+
 .column-1{
     overflow: hidden;
-    margin-left: 60px;
-   
 }
 
-.column-1 > img:hover{ transform:scale(1.2,1.2);transition: all 0.5s ease-out;
+.column-1 > img:hover{ 
+    transform:scale(1.2,1.2);transition: all 0.5s ease-out;
+}
 
+.column-1 > img{
+
+height: 100%;
 }
 .column-2{
 width: 300px;
@@ -288,11 +298,6 @@ text-align: center;
 font-size: 20px;
 margin-top: 75px;
 }
-
-.column-2:hover{
-    background-color: #ccd8b0;
-}
-
 
 
 .container-5{  
@@ -309,17 +314,19 @@ margin-top: 75px;
 
 }
 
-.column-3:hover{
-    background-color: #ccd8b0;
-}
 
 .column-4{
     overflow: hidden;
-    margin-right: 60px;
+   
 }
+
 
 .column-4 > img:hover{
     transform:scale(1.2,1.2);transition: all 0.5s ease-out;
+}
+
+.column-4 > img{
+    height: 100%;
 }
 
 .container-5{
@@ -332,7 +339,7 @@ margin-top: 75px;
    
 }
 .recycle{
-
+    width: 1200px;
     justify-content: center;
     display: flex;
     text-align: center;
@@ -343,8 +350,8 @@ margin-top: 75px;
 }
 
 .hope{
-    width: 700px;
-    height: 350px;
+    width: 600px;
+    height: 300px;
     background-color:#ccd8b0 ;
     font-size: 20px;
     text-align: center;
@@ -363,8 +370,11 @@ margin-top: 75px;
 .aboutus{
     width: 400px;
     text-align: center;
-    
-    
+}
+
+.aboutus > a >p:hover{
+ font-weight: bold;
+ text-decoration: underline;
 }
 
 .shop{
@@ -372,10 +382,17 @@ margin-top: 75px;
     text-align: center;
 }
 
+.shop > a >p:hover{
+ font-weight: bold;
+ text-decoration: underline;
+
+}
+
 .contact{
     width: 400px;
     text-align: center;
 }
+
 
 .footer{
     display: flex;
@@ -388,6 +405,11 @@ margin-top: 75px;
 
 .shop > a >img{
     border-radius: 90%;
+    margin-top: 30px;
+}
+
+.copyright{
+    padding-top: 30px;
 }
 </style>
 </head>
@@ -396,102 +418,90 @@ margin-top: 75px;
 
     <div class="header">
 
-        <div class="logo">
-            <a href="first-page.html"><img src="mountain-1.png" width="100px" height="70px" alt=""></a>
+
+        <div class="header-style">
+    
+            <div class="nav">
+                <div class="logo">
+                    <a href="first-page.html"><img src="mountain-1.png" width="100px" height="70px" alt=""></a>
+                </div>
+            </div>
+        
+                <div class="nav-2">
+        
+                    <ul class="wrap">
+    
+                        <li class="lab"> 關於我們
+                            <ul>
+                            <li><a href="second-page.html">品牌理念</a></li>
+                            </ul>
+                        </li>
+        
+            
+                        <li class="lab"> 商品分類
+                            <ul>
+                                <li><a href="third-page.html">服飾</a></li>
+                                <li><a href="bag-page.html">登山包</a></li>
+                            </ul>
+                        </li>
+    
+                        <li class="lab">最新商品 
+                            <ul>
+                                <li><a href="fourth-page.html">新品專區</a></li>
+                                <li><a href="fourth-page.html">限時優惠</a></li>
+                            </ul>
+                        </li>
+        
+                        <li class="lab"> 會員中心
+                            <ul><li><a href="five-page.html">會員註冊</a></li></ul>
+                        </li>
+            
+    
+                        <li class="lab-2">聯絡我們</li>
+        
+                    </ul>
+                </div>
+    
+    
+                <div class="nav-3">
+                        <div class="search">
+                            <label for="search">
+                            <input type="text" name="search "
+                            placeholder="請輸入您要查詢的資料">
+                            </label>
+                            <a href=""><img src="find.png" width="20px" height="20px"alt=""></a>
+                            <a href=""><img src="shopping.png" width="20px" height="20px"alt=""></a>
+                        </div>
+                </div>
         </div>
-    
-        <div class="nav">
-    
-            <ul class="wrap">
-    
-                <li class="lab"><a href="">關於我們</a>
-                    <ul>
-                    <li><a href="second-page.html">品牌理念</a></li>
-                    </ul>
-                </li>
-    
-    
-                <li class="lab"><a href=""> 商品分類</a>
-                    <ul>
-                        <li><a href="">服飾</a>
-                            <ul>
-                                <li><a href="third-page.html">上衣</a></li>
-                                <li><a href="third-page.html">下著</a></li>
-                                <li><a href="third-page.html">登山鞋</a></li>
-                            </ul>
-                        
-                        </li>
-                        
-                        <li><a href="">旅行配件</a>
-                            <ul>
-                            <li><a href="bag-page.html">登山包<a><li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-    
-                <li class="lab"><a href="">最新消息</a>
-                    <ul>
-                        <li><a href="fourth-page.html">新品專區</a></li>
-                        <li><a href="fourth-page.html">限時優惠</a></li>
-                    </ul>
-                </li>
-    
-                <li class="lab"><a href="">會員中心</a>
-                    <ul>
-                        <li><a href="five-page.html">會員註冊</a></li>
-                        <li><a href="five-page.html">會員登入</a></li>
-                        <li><a href="seven-page.html">訂單查詢</a></li>
-                    </ul>
-                </li>
-    
-                <li class="lab"><a href="">聯絡我們</a>
-                    <ul>
-                        <li><a href="six-page.html">客戶服務</a></li>
-                        <li><a href="six-page.html">常見Q&A</a></li>
-                    </ul>
-            </ul>
-    
-            <div class="input">
-                <label for="search">搜尋:
-                <input type="text" name="search "
-                placeholder="請輸入您要查詢的資料"/>
-                </label>
-    
-                <div class="icon">
-                    <a href=""><img src="find.png" width="20px" height="20px"alt=""></a>
-                    <a href=""><img src="shopping.png" width="20px" height="20px"alt=""></a>
+    </div>
+   
+
+
+        <div class="container">
+            <div class="title-pic">
+            <img src="title.jpg" width="1200px" height="800px">
+            </div>
+        </div>
+
+
+    <div class="container-2">
+        
+            <div class="story">
+            <img src="story.jpg" width="600" height="300" alt="">
+        
+
+                <div class="text">
+                    <h2>我們的故事<br><br></h2>
+                    <p>Mountain . Journey 是一個充滿靈感的品牌，<br><br>我們追求設計與性能，透過不斷的科技創新，<br><br>是為了提供登山者合身舒適的登山用品，<br><br>讓登山的愛好者能盡情的挑戰自我極限。</p><br>
+
+                    <div class="seemore">
+                    <a href="second-page.html"><p>看更多</p></a>
+                    </div>
+        
                 </div>
 
             </div>
-        </div>
-    </div>
-
-    <ol class="bread">
-        <li><a href="first-page.html">首頁</a></li>
-    </ol>
-
-
-
-<div class="container">
-        
-        <img src="title.png">
-       
-</div>
-
-    <div class="container-2">
-        <div class="story">
-        <img src="story.jpg" width="700" height="350" alt="">
-        
-
-        <div class="text">
-        <h2>我們的故事<br><br></h2>
-        <p>Mountain . Journey 是一個充滿靈感的品牌，<br><br>我們追求設計與性能，透過不斷的科技創新，<br><br>是為了提供登山者合身舒適的登山用品，<br><br>讓登山的愛好者能盡情的挑戰自我極限。</p><br>
-        <a href="second-page.html"><p>看更多</p></a>
-    
-        </div>
-
-        </div>
     </div>
     
         <div class="title-2">
@@ -503,19 +513,25 @@ margin-top: 75px;
                 <div class="category">
 
                     <div class="item">
-                    <img src="short.jpg"  width="250" height="380" alt="">
-                    <a href="third-page.html"><h3>經典上衣</h3></a>
+                            <a href="third-page.html"><img src="short.jpg"  width="250" height="380" alt=""></a>
+                                <div class="word">
+                                <a href="third-page.html"><h3>經典上衣</h3></a>
+                                </div>
                     </div>
 
 
                     <div class="item">
-                    <img src="shoes.jpg"  width="250" height="380" alt="">
-                    <a href="third-page.html"><h3>透氣鞋款</h3></a>
+                        <a href="third-page.html"> <img src="shoes.jpg"  width="250" height="380" alt=""></a>
+                            <div class="word">
+                            <a href="third-page.html"><h3>透氣鞋款</h3></a>
+                            </div>
                     </div>
 
                     <div class="item">
-                    <img src="bag.jpg"  width="250" height="380" alt="">
-                    <a href="bag-page.html"><h3>時尚配件</h3></a>
+                        <a href="bag-page.html"><img src="bag.jpg"  width="250" height="380" alt=""></a>
+                            <div class="word">
+                            <a href="bag-page.html"><h3>時尚配件</h3></a>
+                            </div>
                     </div>
 
                 </div>
@@ -523,25 +539,25 @@ margin-top: 75px;
             </div>
    
 
+            <div class="container-style">
+                <div class="container-4">
+                        <div class="column-1">
+                            <img src="Jackets.jpg" width="300" height="450" alt="">
+                        </div>
 
-            <div class="container-4">
-                    <div class="column-1">
-                        <img src="Jackets.jpg" width="300" height="450" alt="">
-                    </div>
-
-                    <div class="column-2">
-                        <h2><a href="">2021秋季新款</a></h2><br><br><br>
-                        <p><a href="">特級極輕 再生羽絨外套</a></p><br>
-                        <p><span class="dollars">NT $ 3290</span></p>
-                    </div>
-            </div>
+                        <div class="column-2">
+                            <h2>2021秋季新款</h2><br><br><br>
+                            <p>特級極輕 再生羽絨外套</p><br>
+                            <p><span class="dollars">NT $ 3290</span></p>
+                        </div>
+                </div>
 
 
                 <div class="container-5">
 
                     <div class="column-3">
-                        <h2><a href="">2021秋季新款</a></h2><br><br><br>
-                        <p><a href="">抗UV連帽外套</a></p><br>
+                        <h2>2021秋季新款</h2><br><br><br>
+                        <p>抗UV連帽外套</p><br>
                         <p><span class="dollars">NT $ 1290</span></p>
                     </div>  
                    
@@ -552,6 +568,11 @@ margin-top: 75px;
 
                 </div>
 
+            </div>
+
+
+
+
                 <div class="container-6">
                     <div class="recycle">
 
@@ -561,7 +582,7 @@ margin-top: 75px;
                         </div>  
 
                         <div class="hope-2">
-                            <img src="recycle.jpg" width="700" height="350" alt="">
+                            <img src="recycle.jpg" width="600" height="300" alt="">
                         </div>
 
                     </div>
@@ -581,7 +602,7 @@ margin-top: 75px;
                 <div class="shop">
                 <h2>購物說明</h2><br>
                 <a href="six-page.html"><p>退貨規則</p></a><br>
-                <a href="six-page.html"><p>Q&A</p></a><br>
+                
 
                 <a href=""><img src="fb.png" alt="" width="30px" height="30px"></a>
                 <a href=""><img src="ig.png" alt="" width="30px" height="30px"></a>
@@ -589,11 +610,17 @@ margin-top: 75px;
                 </div>
 
                 <div class="contact">
-                <h2>聯絡我們</h2><br>
-                <a href=""><p>線上回報</p></a><br>
-                <p>Monday-Sunday    09:00-23:00      (03)333-3353 <br>           
-                email:  mountain.journey@gmail.com.tw</p>
-                <p>Copyright © 2021 M.Journey all rights reserved.</p>
+                    <h2>聯絡我們</h2><br>
+
+                    <div class="phone">
+                    <br><p>Monday-Sunday    09:00-23:00      (03)333-3353 <br>           
+                    email:  mountain.journey@gmail.com.tw</p>
+                    </div>
+
+                    <div class="copyright">
+                    <p>Copyright © 2021 M.Journey all rights reserved.</p>
+                    </div>
+
                 </div>
             </div>
 </body>
