@@ -164,9 +164,10 @@ margin-top: 75px;
     margin-right: auto;
     display: flex;
 }
-.hope-2{
-    display: inline-block;
-    margin-left: -50px;
+.hope-2 img{
+    max-width: 600px;
+    height: 300px;
+
 }
 .hope{
     width: 600px;
@@ -251,6 +252,7 @@ justify-content: center;
     margin-right: auto;
     display: flex;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .column-3{
@@ -265,19 +267,37 @@ justify-content: center;
     height: 290px;
     }
 
-    .hope-2{
-        display: none;
-     }
+   
      
      
      .hope{
          color: #556168;
          width: 100%;
          height: auto;
-         background-color: #ccd8b0;
          font-size: 16px;
          font-family: Arial, Helvetica, sans-serif;
          margin-left: auto;
          margin-right: auto;
+         position: absolute;
+         top: 50px;
+         background-color: transparent;
      }
+
+     .hope > p{
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+
+    .hope-2{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hope-2 img{
+        width: 100%;
+        height: auto;
+        opacity: 0.15;
+        position: relative;
+    }
+      
 }
