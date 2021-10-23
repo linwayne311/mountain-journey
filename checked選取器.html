@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #xxx:checked{
+            transform: scale(2);
+        }
+
+        #xxx:checked+label{
+            color: red;
+        }
+
+        #xxx:checked ~ .wayne{
+            color:blue
+        }
+    </style>
+</head>
+<body>
+    
+    <input type="checkbox" id="xxx">
+
+    <label for="xxx">控制</label>
+
+    <div class="wayne">wayne</div>
+</body>
+</html>

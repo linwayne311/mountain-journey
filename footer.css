@@ -1,0 +1,60 @@
+.aboutus{
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.aboutus > a >p:hover{
+ font-weight: bold;
+ text-decoration: underline;
+}
+
+.shop{
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.shop > a >p:hover{
+ font-weight: bold;
+ text-decoration: underline;
+
+}
+
+.contact{
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+
+.footer{
+    display: flex;
+    background-color:#ccd8b0;
+    margin-top: 200px;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.shop > a >img{
+    border-radius: 90%;
+    margin-top: 30px;
+}
+
+.copyright{
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

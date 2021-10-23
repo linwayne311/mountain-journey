@@ -5,174 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mountain journey</title>
-    
+    <link rel="stylesheet" href="style.css">
     <style>
    
-   *{
-    margin:0;
-    padding:0;
-   
- }
- 
-
-body{
+   body{
     background-color: #E8E8D0;
 }
-a{text-decoration: none;}
-a{color:#556168;}
-h2{color: #556168;}
-h3{color: #556168;}
-p{color: #556168;}
-
-
-.wrap{
-    
-  border: #ccc 1px solid;
-  display: inline-block;
-  font-family:  Arial, Helvetica, sans-serif;
-  font-size: 13px;
-}
-
-ul.wrap li {
-  position: relative;
-  white-space: nowrap;
-  border-right: #ccc 1px solid;
-  list-style: none;
-}
-
-ul.wrap>li:last-child {
-  border-right: none;
-}
-
-ul.wrap>li {
-  float: left;
-  /* 只有第一層是靠左對齊*/
-}
-
-ul.wrap  {
-  background-color: #ccd8b0;
-  color: #333;
-  display: block;
-  padding: 0 10px;
-  text-decoration: none;
-  line-height: 40px;
-  
-}
-
-ul.wrap a:hover {
-  /* 滑鼠滑入按鈕變色*/
-  background-color: #d6d970;
- 
-}
-
-
-
-ul.wrap ul {
-  border:  1px solid #556168;
-  background-color: #ccd8b0;
-  position: absolute;
-  z-index: 99;
-  left: -1px;
-  top: 100%;
-  min-width: 180px;
-}
-
-ul.wrap ul li {
-  border-bottom: #ccc 1px solid;
-}
-
-ul.wrap ul li:last-child {
-  border-bottom: none;
-}
-
-
-ul.wrap ul {
-  /*隱藏次選單*/
-  display: none;
-}
-
-ul.wrap li:hover>ul {
-  /* 滑鼠滑入展開次選單*/
-  display: block;
-
-}
-
-.header-style{
-    width: 100%;
-    display: flex;
-    background-color: #ccd8b0;
-    justify-content: center;
-}
-
-.nav{
-    width: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav-2{
-    width: 700px;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.nav-3{
-    display: flex;
-    justify-content: center;
-    width: 400px;
-    align-items: center;
-}
-
-
-.lab{
-    list-style: none;
-    padding: 25px;
-    margin-top: 15px;
-    color: #556168;
-    font-size: 20px;
-
-}
-
-.lab:hover{
-    font-weight: bold;
-    text-decoration: underline;
-   
-}
-
-.lab-2{
-    list-style: none;
-    padding: 25px;
-    margin-top: 15px;
-    color: #556168;
-    font-size: 20px;
-    text-decoration:none;  
-}
-
-.title{
-    text-align: center;
-}
-
-label{
-    font-size: 20px;
-}
-
-
-input{
-    font-size: 20px;
-    margin-top: 20px;
-}
-
-
 .bread-style{
     list-style: none;
     display: flex;
-    justify-content: left;
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-   
-    
 }
 
 .videostyle{
@@ -180,9 +21,14 @@ input{
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-  
+    
 }
 
+.videostyle video{
+    width: 100%;
+    display: block;
+    height: auto;
+}
 
 .container{
     margin-top: 200px;
@@ -371,65 +217,43 @@ position: relative;
 </head>
 <body>
 
-<div class="header">
+    <input type="checkbox" name="" id="menu-control">
 
-
-    <div class="header-style">
-
-        <div class="nav">
-            <div class="logo">
-                <a href="first-page.html"><img src="mountain-1.png" width="100px" height="70px" alt=""></a>
-            </div>
+    <header class="main-header">
+        <h1 class="logo">
+            <a href="first-page.html">
+                <img src="mountain-1.png" width="90px" height="66px"alt="">
+            </a>
+        </h1>
+     
+    
+        <!--選單-->
+        <nav class="main-nav">
+            <a href="second-page.html">關於我們</a>
+            <a href="third-page.html">服飾用品</a>
+            <a href="bag-page.html">登山配件</a>
+            <a href="fourth-page.html">限時優惠</a>
+            <a href="five-page.html">會員註冊</a>
+        </nav>
+  
+            
+        <div class="search">
+        <label for="search">
+        <input type="text" name="search "
+         placeholder="請輸入您要查詢的資料">
+        </label>
+        <a href=""><img src="find.png" width="20px" height="20px"alt=""></a>
+        <a href=""><img src="shopping.png" width="20px" height="20px"alt=""></a>
         </div>
-    
-            <div class="nav-2">
-    
-                <ul class="wrap">
-
-                    <li class="lab"> 關於我們
-                        <ul>
-                        <li><a href="second-page.html">品牌理念</a></li>
-                        </ul>
-                    </li>
-    
-        
-                    <li class="lab"> 商品分類
-                        <ul>
-                            <li><a href="">服飾</a></li>
-                            <li><a href="">登山包</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="lab">最新商品 
-                        <ul>
-                            <li><a href="fourth-page.html">新品專區</a></li>
-                            <li><a href="fourth-page.html">限時優惠</a></li>
-                        </ul>
-                    </li>
-    
-                    <li class="lab"> 會員中心
-                        <ul><li><a href="five-page.html">會員註冊</a></li></ul>
-                    </li>
-        
-
-                    <li class="lab-2">聯絡我們</li>
-    
-                </ul>
-            </div>
 
 
-            <div class="nav-3">
-                    <div class="search">
-                        <label for="search">
-                        <input type="text" name="search "
-                        placeholder="請輸入您要查詢的資料">
-                        </label>
-                        <a href=""><img src="find.png" width="20px" height="20px"alt=""></a>
-                        <a href=""><img src="shopping.png" width="20px" height="20px"alt=""></a>
-                    </div>
-            </div>
-    </div>
-</div>
+        <!--漢堡-->
+        <label for="menu-control" class="hb">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </header>
 
        
 
@@ -439,7 +263,6 @@ position: relative;
                 <ol class="bread-style">
                     <li><a href="first-page.html">首頁</a></li>
                     <li><a href="">>關於我們</a></li>
-                    <li><a href="">>品牌理念</a></li>
                 </ol>
             </div>
 
