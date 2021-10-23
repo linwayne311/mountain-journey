@@ -31,7 +31,7 @@
 .footer{
     display: flex;
     background-color:#ccd8b0;
-    margin-top: 200px;
+    margin-top: 100px;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
 
@@ -46,15 +46,41 @@
   text-align: center;
 }
 
+@media screen and (max-width:768px){ 
+
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+        background-color:#ccd8b0;
+        margin-top: 100px;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    .shop{
+        margin-top: 10px;
+        max-width: 400px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .shop > a >p:hover{
+     font-weight: bold;
+     text-decoration: underline;
+    
+    }
+
+
+    .contact{
+        margin-bottom: 10px;
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+    }
 
 
 
 
 
-
-
-
-
-
-
-
+}
