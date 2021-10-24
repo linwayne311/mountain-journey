@@ -1,0 +1,564 @@
+.bread-style{
+    list-style: none;
+    display: flex;
+    background-color: #E8E8D0;
+    
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    background-color: #E8E8D0;
+}
+
+.box{
+    width: 600px;
+    height: 400px;
+    background:#ccd8b0;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 47% 53% 45% 55% / 57% 54% 46% 43%  ;
+    font-family: Arial, Helvetica, sans-serif;
+   
+   
+}
+
+.picture {
+    margin: 10px;
+}
+
+.picture > img{
+    border-radius: 90%;
+}
+
+.column-1{
+    
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25% ;
+    width: 90%,6em;
+    justify-content: center;
+    margin-top: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+   
+    
+}
+.coat{
+    width: 250px;
+    border-radius: 5%;
+    margin: 50px;
+    overflow: hidden;
+   
+}
+
+
+
+.coat >img:hover{
+
+    transform:scale(1.2,1.2);transition: all 0.5s ease-out;
+}
+
+
+.name{
+    display: flex;
+    justify-content: center;
+}
+
+.price{
+display: flex;
+justify-content: center;
+margin-top: 10px;
+}
+
+
+.column-2{
+  
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25% ;
+    width: 90%,6em;
+    justify-content: center;
+    margin-top: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+  
+}
+.plants{
+  width: 250px;
+  border-radius: 5%;
+  margin: 50px;
+  overflow: hidden;
+  
+}
+
+.plants >img:hover{
+ transform:scale(1.2,1.2);transition: all 0.5s ease-out;
+}
+
+.container-2{
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    background-color: #E8E8D0;
+}
+.box-2{
+    width: 600px;
+    height: 400px;
+    background:#ccd8b0;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 47% 53% 45% 55% / 57% 54% 46% 43%  ;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+.picture-2{
+    margin: 10px;
+}
+.picture-2 > img{
+    border-radius: 90%;
+}
+
+
+.column-3{
+  
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25% ;
+    width: 90%,6em;
+    justify-content: center;
+    margin-top: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.shoes{
+  width: 250px;
+  border-radius: 5%;
+  margin: 50px;
+  opacity: 0.5; 
+  position: relative;
+  
+}
+
+.manshoes{
+    
+    width: 250px;
+    border-radius: 5%;
+    margin: 50px;
+    overflow: hidden;
+    
+  }
+
+.manshoes > img:hover{
+    transform:scale(1.2,1.2);transition: all 0.5s ease-out;
+}
+.column-4{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25% ;
+    width: 90%,6em;
+    justify-content: center;
+    margin-top: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.womencoat{
+  width: 250px;
+  border-radius: 5%;
+  margin: 50px;
+  overflow: hidden;
+  
+}
+
+.womencoat > img:hover{
+    transform:scale(1.2,1.2);transition: all 0.5s ease-out;
+}
+
+.column-5{
+ 
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25% ;
+    width: 90%,6em;
+    justify-content: center;
+    margin-top: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.womenplants{
+  width: 250px;
+  border-radius: 5%;
+  margin: 50px;
+  overflow: hidden;
+ 
+  
+}
+
+.womenplants > img:hover{
+
+transform:scale(1.2,1.2);transition: all 0.5s ease-out;
+}
+.container-6{
+ 
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25% ;
+    width: 90%,6em;
+    justify-content: center;
+    margin-top: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.womenshoes{
+  width: 250px;
+  border-radius: 5%;
+  margin: 50px;
+  overflow: hidden;
+ 
+  
+}
+
+.womenshoes > img:hover{
+    transform:scale(1.2,1.2);transition: all 0.5s ease-out;
+}
+
+
+.soldout{
+    position: absolute;
+    bottom: 150px;
+    left: 75px;
+}
+
+.mancoat{
+    position: relative;
+    opacity: 0.5; 
+    width: 250px;
+    border-radius: 5%;
+    margin: 50px;
+  
+}
+
+.aboutus{
+    width: 400px;
+    text-align: center;
+}
+
+.aboutus > a >p:hover{
+ font-weight: bold;
+ text-decoration: underline;
+}
+
+.shop{
+    width: 400px;
+    text-align: center;
+}
+
+.shop > a >p:hover{
+ font-weight: bold;
+ text-decoration: underline;
+
+}
+
+.contact{
+    width: 400px;
+    text-align: center;
+}
+
+.footer{
+    display: flex;
+    background-color:#ccd8b0;
+    margin-top: 100px;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+    
+}
+
+
+.shop > a >img{
+    border-radius: 90%;
+    margin-top: 30px;
+}
+
+.copyright{
+    padding-top: 10px;
+    background-color: #E8E8D0;
+}
+/*----------------------------------*/
+
+
+@media screen and (max-width:1200px){
+    .container{
+        display: flex;
+        justify-content: center;
+        background-color: #E8E8D0;
+        position: relative;
+    }
+    
+    .box{
+        max-width: 600px;
+        width: calc(100vh- 10em);
+        max-height: 400px;
+        height: calc(100vh- 10em);
+        background:transparent;
+        position: absolute;
+        top: -20%;
+       
+    }
+    
+    .picture {
+        margin: 10px;
+        
+    }
+    
+    .picture > img{
+        border-radius: 90%;
+        opacity: 0.3;
+        width: 450px;
+        height: 300px;
+        
+    }
+    
+    .column-1{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+        
+       
+        
+    }
+    .coat{
+        width: 250px;
+        border-radius: 5%;
+        margin: 50px;
+        overflow: hidden;
+       
+    }
+    
+    
+    
+    .coat >img:hover{
+    
+        transform:scale(1.2,1.2);transition: all 0.5s ease-out;
+    }
+    
+    
+    .name{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .price{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    }
+    
+    
+    .column-2{
+      
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      font-family: Arial, Helvetica, sans-serif;
+      
+    }
+    .plants{
+      width: 250px;
+      border-radius: 5%;
+      margin: 50px;
+      overflow: hidden;
+      
+    }
+    
+    .plants >img:hover{
+     transform:scale(1.2,1.2);transition: all 0.5s ease-out;
+    }
+    
+    .container-2{
+        display: flex;
+        margin-top: 100px;
+        justify-content: center;
+        background-color: #E8E8D0;
+        position: relative;
+    }
+    .box-2{
+        max-width: 600px;
+        width: calc(100vh- 10em);
+        max-height: 400px;
+        height: calc(100vh- 10em);
+        background: transparent;
+        position: absolute;
+        top: -20%;
+       
+    }
+    
+    .picture-2 {
+        margin: 10px;
+        
+    }
+    
+    .picture-2 > img{
+        border-radius: 90%;
+        opacity: 0.3;
+        width: 450px;
+        height: 300px;
+        
+    }
+    
+    
+    .column-3{
+      
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      font-family: Arial, Helvetica, sans-serif;
+      
+    }
+    
+    .shoes{
+      width: 250px;
+      border-radius: 5%;
+      margin: 50px;
+      opacity: 0.5; 
+      position: relative;
+      
+    }
+    
+    .manshoes{
+        
+        width: 250px;
+        border-radius: 5%;
+        margin: 50px;
+        overflow: hidden;
+        
+      }
+    
+    .manshoes > img:hover{
+        transform:scale(1.2,1.2);transition: all 0.5s ease-out;
+    }
+    .column-4{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      font-family: Arial, Helvetica, sans-serif;
+      
+    }
+    
+    .womencoat{
+      width: 250px;
+      border-radius: 5%;
+      margin: 50px;
+      overflow: hidden;
+      
+    }
+    
+    .womencoat > img:hover{
+        transform:scale(1.2,1.2);transition: all 0.5s ease-out;
+    }
+    
+    .column-5{
+     
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .womenplants{
+      width: 250px;
+      border-radius: 5%;
+      margin: 50px;
+      overflow: hidden;
+     
+      
+    }
+    
+    .womenplants > img:hover{
+    
+    transform:scale(1.2,1.2);transition: all 0.5s ease-out;
+    }
+    .container-6{
+     
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .womenshoes{
+      width: 250px;
+      border-radius: 5%;
+      margin: 50px;
+      overflow: hidden;
+     
+      
+    }
+    
+    .womenshoes > img:hover{
+        transform:scale(1.2,1.2);transition: all 0.5s ease-out;
+    }
+    
+    
+    .soldout{
+        position: absolute;
+        bottom: 150px;
+        left: 75px;
+    }
+    
+    .mancoat{
+        position: relative;
+        opacity: 0.5; 
+        width: 250px;
+        border-radius: 5%;
+        margin: 50px;
+      
+    }
+    
+    .aboutus{
+        width: 400px;
+        text-align: center;
+    }
+    
+    .aboutus > a >p:hover{
+     font-weight: bold;
+     text-decoration: underline;
+    }
+    
+    .shop{
+        width: 400px;
+        text-align: center;
+    }
+    
+    .shop > a >p:hover{
+     font-weight: bold;
+     text-decoration: underline;
+    
+    }
+    
+    .contact{
+        width: 400px;
+        text-align: center;
+    }
+    
+    .footer{
+        display: flex;
+        background-color:#ccd8b0;
+        margin-top: 100px;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+    
+        
+    }
+    
+    
+    .shop > a >img{
+        border-radius: 90%;
+        margin-top: 30px;
+    }
+    
+    .copyright{
+        padding-top: 10px;
+        background-color: #E8E8D0;
+    }
+}
