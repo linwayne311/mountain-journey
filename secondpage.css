@@ -265,7 +265,7 @@ body{
         position: absolute;
         left: 0;
         top: 50%;
-        transform: translate(-10%,-50%);
+        transform: translate(-5%,-50%);
     
     }
     
@@ -281,7 +281,7 @@ body{
         background-color: transparent;
         text-align: center;
         border-radius: 90%;
-        margin-left: -5%;
+        transform: translateX(-80%);
         margin-top: 50px;
         line-height: 50px;
         font-size: 16px;
@@ -311,7 +311,7 @@ body{
             position: absolute;
             left: 0;
             top: 50%;
-            transform: translate(-10%,-50%);
+            transform: translate(-5%,-50%);
         
         }
         
@@ -327,7 +327,7 @@ body{
             background-color: transparent;
             text-align: center;
             border-radius: 90%;
-            margin-left: -5%;
+            transform: translateX(-60%);
             margin-top: 50px;
             line-height: 50px;
             font-size: 16px;
