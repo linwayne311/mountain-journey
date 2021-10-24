@@ -1,0 +1,337 @@
+*{
+    outline-style: 1px solid red;
+}
+body{
+    background-color: #E8E8D0;
+}
+.bread-style{
+    list-style: none;
+    display: flex;
+}
+
+.videostyle{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.videostyle video{
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.container{
+    margin-top: 200px;
+    overflow: hidden;
+}
+
+.mountain{
+    margin-top: 50px;
+    font-size: 20px;
+    background-color: #ccd8b0;
+    width: 800px;
+    height: 500px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 49% 51% 51% 49% / 44% 42% 58% 56%  ;
+    font-family: Arial, Helvetica, sans-serif;
+  
+    
+}
+
+
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  
+}
+
+.word{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 50px;
+    
+
+}
+
+.word > p{
+   line-height: 40px;
+}
+
+.container-style{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+    .container-2{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    }
+   
+    .box{
+        width: 600px;
+        height: 400px;
+        background-color: gray;
+        
+        
+    }
+    
+    .pic{
+        position: absolute;
+        top: 50px;
+        left: 50px;
+    
+    }
+    
+    .text-1{
+        width: 300px;
+        height: 300px;
+        background-color: #d6d970;
+        margin-left: 200px;
+        text-align: center;
+        border-radius: 90%;
+        margin-top: 50px;
+        line-height: 50px;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    
+     
+    }
+    .text-1:hover{
+        transform:scale(1.1,1.1);transition: all 1s ease-out;
+    }
+
+    .container-3{
+        margin-top: 200px;
+        width: 1200px;
+        display: flex;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    
+    .text-2{
+        width: 300px;
+        height: 300px;
+        background-color: #dbc797;
+        text-align: center;
+        border-radius: 90%;
+        margin-top: 50px;
+        line-height: 50px;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    
+    }
+    
+    .text-2:hover{
+        transform:scale(1.1,1.1);transition: all 1s ease-out;
+    }
+    
+    .box-2{
+        width: 600px;
+        height: 400px;
+        background-color: gray;
+        margin-left: 200px;
+        
+    }
+    
+    .pic-2{   
+        position: absolute;
+        top: 50px;
+        left: 500px;
+    
+    }
+    
+    .aboutus{
+        width: 400px;
+        text-align: center;
+    }
+    
+    .aboutus > a >p:hover{
+     font-weight: bold;
+     text-decoration: underline;
+    }
+    
+    .shop{
+        width: 400px;
+        text-align: center;
+    }
+    
+    .shop > a >p:hover{
+     font-weight: bold;
+     text-decoration: underline;
+    
+    }
+    
+    .contact{
+        width: 400px;
+        text-align: center;
+    }
+    
+    .footer{
+        display: flex;
+        background-color:#ccd8b0;
+        margin-top: 200px;
+        justify-content: center;
+        font-family: Arial, Helvetica, sans-serif;
+    
+        
+    }
+    
+    
+    .shop > a >img{
+        border-radius: 90%;
+        margin-top: 30px;
+    }
+    
+    .copyright{
+        padding-top: 10px;
+        background-color: #E8E8D0;
+    }
+
+@media screen and (max-width:1080px){
+
+    .container{
+        margin-top: 100px;
+        overflow: hidden;
+    }
+
+    .mountain{
+        margin-top: 50px;
+        background-color: transparent;
+        width: 100%;
+        max-width: 800px;
+        height: auto;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: Arial, Helvetica, sans-serif;
+   }
+
+
+   .title{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 12px;
+  
+}
+
+.word{
+    font-size: 16px;
+}
+.container-style{
+    max-width: 1200px;
+    width: calc(100vh - 10em);
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+    .container-2{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: calc(100vh - 10em);
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    }
+   
+    .box{
+       display: none;
+        
+        
+    }
+    
+    .pic{
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translate(-10%,-50%);
+    
+    }
+    
+    .pic img{
+        display: block;
+        max-width: 100%;
+        opacity: 0.5;
+    }
+    .text-1{
+        z-index: 1;
+        width: 300px;
+        height: 300px;
+        background-color: transparent;
+        text-align: center;
+        border-radius: 90%;
+        margin-left: -5%;
+        margin-top: 50px;
+        line-height: 50px;
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+    
+    }
+   
+
+    .container-3{
+        margin-top: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        width: calc(100vh - 10em);
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+        }
+       
+        .box-2{
+           display: none;
+            
+            
+        }
+        
+        .pic-2{
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translate(-10%,-50%);
+        
+        }
+        
+        .pic-2 img{
+            display: block;
+            max-width: 100%;
+            opacity: 0.5;
+        }
+        .text-2{
+            z-index: 1;
+            width: 300px;
+            height: 300px;
+            background-color: transparent;
+            text-align: center;
+            border-radius: 90%;
+            margin-left: -5%;
+            margin-top: 50px;
+            line-height: 50px;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+        
+        }
+       
+}
