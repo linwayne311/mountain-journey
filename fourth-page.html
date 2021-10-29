@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mountain journey</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footer.css">
+    
 
  
     <style>
+
 .bread{
     background-color: #E8E8D0;
 }
@@ -18,11 +21,12 @@
     display: flex;
 }
 
-.container{
+.container-box{
+    max-width: 100%;
     display: flex;
     justify-content: center;
     background-color: #E8E8D0;
-    height: 500px;
+    height: auto;
     
 }
 
@@ -37,7 +41,7 @@
 .sales{
     display: flex;
     background-color: #d6d790;
-    width:500px;
+    width: 50%;
     height: 300px;
     border-radius: 5%;
     justify-content: center;
@@ -52,7 +56,7 @@
 .discount{
     display: flex;
     background-color:#dbc797;
-    width: 500px;
+    width: 50%;
     height: 300px;
     border-radius: 5%;
     justify-content: center;
@@ -94,54 +98,44 @@ margin-top: 10px;
     margin-right: auto;
 }
 
-.aboutus{
-    width: 400px;
-    text-align: center;
-}
+.viewPanel{
+            position:relative;
+            width: 1245px;
+            height:400px;
+            margin: auto;
+            overflow:hidden;
+            margin-top: 100px;
+        }
+        .wrap{
+            position:absolute;
+            margin-left:5px;
+            top:5px;
+            left:5px;
+            width:3000px;
+            transition:left 1s;
+        }
+        .item{
+            margin: 5px;
+            width:300px;
+            height:310px;
+            text-align: center;
+            float:left;
+        }
+        .item>img{
+            width: 100%;
+        }
 
-.aboutus > a >p:hover{
- font-weight: bold;
- text-decoration: underline;
-}
+        #btnLeft, #btnRight{
+            color:#dbc797;
+            font-size:30px;
+            font-weight:bold;
+        }
 
-.shop{
-    width: 400px;
-    text-align: center;
-}
-
-.shop > a >p:hover{
- font-weight: bold;
- text-decoration: underline;
-
-}
-
-.contact{
-    width: 400px;
-    text-align: center;
-}
-
-.footer{
-    display: flex;
-    background-color:#ccd8b0;
-    margin-top: 200px;
-    justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
-
-    
-}
-
-
-.shop > a >img{
-    border-radius: 90%;
-    margin-top: 30px;
-}
-
-.copyright{
-    padding-top: 30px;
-}
-
-
-
+        #btnLeft[disabled], #btnRight[disabled]{
+            color:#dbc797;
+            font-size:30px;
+            font-weight:bold;
+        }        
 </style>
 </head>
 
@@ -191,7 +185,7 @@ margin-top: 10px;
             <li><a href="">>限時優惠</a></li>
         </ol>
     </div>
-            <div class="container">
+            <div class="container-box">
                 <div class="column">
                     <div class="sales">
                     <h1>SALES NOW!!!</h1>
@@ -204,137 +198,83 @@ margin-top: 10px;
             </div>
 
 
-            <div class="container-2">
-
-                <div class="column-2">
-
-                    <div class="box" >
-                        <a href="seven-page.html"><img src="jacket.png" width="300px" height="300px" alt=""></a>
-
-                        <div class="name">
-                        <h2><a href="seven-page.html">男款小麥黃雙面穿外套</a></h2>
-                        </div>
-            
-                        <div class="price">
-                        <p>NT$4,990</p>
-                        <a href=><img src="shopping.png" width="20px" height="20px"alt=""></a>
-                        </div>
+            <div class="viewPanel">    
+                <div class="wrap">
+                    <div class="item">
+                        <img src="jacket.png">
+                        <p>男款小麥黃雙面穿外套</p>
+                        <p>$4990</p>
                     </div>
-
-                    <div class="box">
-                        <img src="jacket-2.png" width="300px" height="300px" alt="">
-                
-                        <div class="name">
-                        <h2>男款深綠色雙面穿外套</h2>
-                        </div>
-                
-                        <div class="price">
-                        <p>NT$4,290</p>
-                        <a href=""><img src="shopping.png" width="20px" height="20px"alt=""></a>
-                        </div>
+                    <div class="item">
+                        <img src="jacket-2.png">
+                        <p>男款軍綠黑雙面穿外套</p>
+                        <p>$4290</p>
                     </div>
-
-
-
-                    <div class="box">
-                        <img src="jacket-3.png" width="300px" height="300px" alt="">
-                
-        
-                        <div class="name">
-                        <h2>男款深綠厚款長袖上衣</h2>
-                        </div>
-                
-                        <div class="price">
-                        <p>NT$1,290</p>
-                        <a href=""><img src="shopping.png" width="20px" height="20px"alt=""></a>
-                        </div>
+                    <div class="item">
+                        <img src="women-jacket.png">
+                        <p>女款黑色立領羽絨外套</p>
+                        <p>$3990</p>
                     </div>
-
-
-
-                    <div class="box">
-                        <img src="jacket-4.png" width="300px" height="300px" alt="">
-                
-        
-                        <div class="name">
-                        <h2>男款深綠戶外抓絨外套</h2>
-                        </div>
-                
-                        <div class="price">
-                        <p>NT$3,290</p>
-                        <a href=""><img src="shopping.png" width="20px" height="20px"alt=""></a>
-                        </div>
+                    <div class="item">
+                        <img src="women-jacket-2.png">
+                        <p>女款白沙輕質立領外套</p>
+                        <p>$4290</p>
                     </div>
-                    
-                </div>
-
-            </div> 
-
-
-            <div class="container-3">
-
-                <div class="column-3">
-                    <div class="box" >
-                        <a href="seven-page.html"><img src="jacket.png" width="300px" height="300px" alt=""></a>
-
-                        <div class="name">
-                        <h2><a href="seven-page.html">男款小麥黃雙面穿外套</a></h2>
-                        </div>
-            
-                        <div class="price">
-                        <p>NT$4,990</p>
-                        <a href=><img src="shopping.png" width="20px" height="20px"alt=""></a>
-                        </div>
+                    <div class="item">
+                        <img src="jacket.png">
+                        <p>男款小麥黃雙面穿外套</p>
+                        <p>$4990</p>
                     </div>
-
-                    <div class="box">
-                        <img src="jacket-2.png" width="300px" height="300px" alt="">
-                
-                        <div class="name">
-                        <h2>男款深綠色雙面穿外套</h2>
-                        </div>
-                
-                        <div class="price">
-                        <p>NT$4,290</p>
-                        <a href=""><img src="shopping.png" width="20px" height="20px"alt=""></a>
-                        </div>
+                    <div class="item">
+                        <img src="jacket-2.png">
+                        <p>男款軍綠黑雙面穿外套</p>
+                        <p>$4290</p>
                     </div>
-
-
-
-                    <div class="box">
-                        <img src="jacket-3.png" width="300px" height="300px" alt="">
-                
-        
-                        <div class="name">
-                        <h2>男款深綠厚款長袖上衣</h2>
-                        </div>
-                
-                        <div class="price">
-                        <p>NT$1,290</p>
-                        <a href=""><img src="shopping.png" width="20px" height="20px"alt=""></a>
-                        </div>
+                    <div class="item">
+                        <img src="women-jacket.png">
+                        <p>女款黑色立領羽絨外套</p>
+                        <p>$3990</p>
                     </div>
-
-
-
-                    <div class="box">
-                        <img src="jacket-4.png" width="300px" height="300px" alt="">
-                
-        
-                        <div class="name">
-                        <h2>男款深綠戶外抓絨外套</h2>
-                        </div>
-                
-                        <div class="price">
-                        <p>NT$3,290</p>
-                        <a href=""><img src="shopping.png" width="20px" height="20px"alt=""></a>
-                        </div>
+                    <div class="item">
+                        <img src="women-jacket-2.png">
+                        <p>女款白沙輕質立領外套</p>
+                        <p>$4290</p>
                     </div>
                 </div>
-
-            </div> 
+            </div>
+            <div id="leftRightPanel" style="text-align:center;padding-top:10px;">
+                <input type="button" id="btnLeft" value="<<"  disabled>
+                <input type="button" id="btnRight" value=">>" >
+            </div>
+            <script type="text/javascript">
+            let curIndex = 0;
+            
+            window.addEventListener("load", function(){
+                //----------------------------------btnRight.onclick
+                document.getElementById("btnRight").onclick = function(){
+                    curIndex++;
+                    let wrap = document.querySelector(".wrap");
+                    wrap.style.left = -310 * curIndex + "px";
+                    if(curIndex == 5){
+                        document.getElementById("btnRight").disabled = true; //不可按
+                    }
+                    document.getElementById("btnLeft").disabled = false; //可按
+                }
+                //----------------------------------btnLeft.onclick
+                document.getElementById("btnLeft").onclick = function(){
+                    curIndex--;
+                    let wrap = document.querySelector(".wrap");
+                    wrap.style.left = -310 * curIndex + "px";
+                    if(curIndex == 0){
+                        document.getElementById("btnLeft").disabled = true; //不可按
+                    }
+                    document.getElementById("btnRight").disabled = false; //可按
+                }
+            }, false);
+            </script>    
                 
+
+
             <div class="footer">
 
                 <div class="aboutus">
@@ -356,20 +296,18 @@ margin-top: 10px;
         
                     <div class="contact">
                         <h2>聯絡我們</h2><br>
-        
+    
                         <div class="phone">
-                        <br><p>Monday-Sunday    09:00-23:00      (03)333-3353 <br>           
-                        email:  mountain.journey@gmail.com.tw</p>
+                        <p>Monday-Sunday 09:00-23:00<br><br>phone:(03)333-3353<br><br>
+                        mountain.journey@gmail.com.tw</p>
                         </div>
-        
-                        <div class="copyright">
-                        <p>Copyright © 2021 M.Journey all rights reserved.</p>
-                        </div>
-        
+    
                     </div>
-                
-
             </div>
 
+                <div class="copyright">
+                <p>Copyright © 2021 M.Journey all rights reserved.</p>
+                </div>
 </body>
+
 </html>
