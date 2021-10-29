@@ -25,9 +25,10 @@
 .sales{
     display: flex;
     background-color: #d6d790;
+    color:#556168;
     width: 50%;
-    height: 300px;
-    border-radius: 5%;
+    height: 250px;
+    border-radius: 10%;
     justify-content: center;
     align-items: center;
     transform: rotate(-15deg);
@@ -40,9 +41,10 @@
 .discount{
     display: flex;
     background-color:#dbc797;
+    color:#556168;
     width: 50%;
-    height: 300px;
-    border-radius: 5%;
+    height: 250px;
+    border-radius: 10%;
     justify-content: center;
     align-items: center;
     transform: rotate(15deg);
@@ -112,13 +114,18 @@ margin-top: 10px;
         .sales{
             display: none;
         }
-        .discount > h1{
-            transform: rotate(-15deg);
-        }
+     
+        
         .discount{
+            width: 60%;
+            background-color: transparent;
             margin-left: auto;
             margin-right: auto;
-            margin-top: 50px;
+            margin-top: 0px;
+        }
+        .discount > h1{
+            transform: rotate(-15deg);
+            color: #556168;
         }
         .container{
             display: block;

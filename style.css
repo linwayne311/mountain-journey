@@ -88,7 +88,7 @@ input{
 }
 
 .search{
-    display: flex;
+    display: none;
     align-items: center;
 }
 
@@ -119,7 +119,9 @@ input{
     text-decoration: underline;
     }
     
-    
+    .search{
+        display: block;
+    }
 
 }
     
