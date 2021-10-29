@@ -10,43 +10,37 @@
 .row{
     list-style: none;
 }
-.container-bag{
-    width: 100%;
+.container1{
     display: flex;
     justify-content: center;
     background-color: #E8E8D0;
+    width: 100%;
 }
 
-.box{
+.box1{
+    margin: 50px;
     width: 50%;
-    background:#d6d970;
-    margin: 10px;
+    background:#ccd8b0;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 45% 55% 55% 45% / 57% 55% 45% 43% ;
+    border-radius: 47% 53% 45% 55% / 57% 54% 46% 43%  ;
     font-family: Arial, Helvetica, sans-serif;
    
 }
 
 .picture {
-    margin: 10px;
     width: 50%;
+    margin: 50px;
 }
 
 .picture > img{
     width: 100%;
     border-radius: 90%;
+    object-fit: cover;
 }
 
-.column-1{
-  
-    display: flex;
-    justify-content: center;
-    margin-top: 100px;
-    font-family: Arial, Helvetica, sans-serif;
-    
-}
+
 .bag{
     width: 100%;
     border-radius: 5%;
@@ -133,7 +127,7 @@ margin-top: 10px;
 
 
 
-@media screen and (max-width:1200px){
+@media screen and (max-width:1024px){
     .bag{
         margin-left: auto;
         margin-right: auto;
@@ -160,10 +154,7 @@ margin-top: 10px;
         top: 150px;
     }
     
-    .container-bag{
-        position: relative;
-    }
-    .box{
+    .box1{
         background-color: transparent;
         position: absolute;
         top:50%;
@@ -175,4 +166,11 @@ margin-top: 10px;
         width: 80%;
         margin: auto;
     }
-}
+    
+    .picture >img{
+    width: 100%;
+    object-fit: cover;
+    }
+    .container1{
+        position: relative;
+    }

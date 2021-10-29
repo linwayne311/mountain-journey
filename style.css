@@ -58,10 +58,10 @@ display: none;
     position: absolute;
     background-color: #ccd8b0;
     top: 100%;
-    right: -80%;
+    left: -80%;
     width: 80%;
     height: calc(100vh -75px);
-    transition: right 1s;
+    transition: all 1s;
     z-index: 3;
     opacity: 0.9;
 }
@@ -79,7 +79,7 @@ display: none;
     }
 
 #menu-control:checked ~ .main-header .main-nav{
-    right: 0;
+    left: 0;
 }
 
 
@@ -102,10 +102,10 @@ input{
     position: relative;
     background-color: transparent;
     top: 0%;
-    right: 0%;
+    left: 0%;
     width: auto;
     height: auto;
-    transition: right 1s;
+    transition: all 1s;
 }
 
 

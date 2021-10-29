@@ -356,6 +356,10 @@ object-fit: cover;
 width: 100%;
 object-fit: cover;
 }
+
+.column-2{
+    margin: 10px;
+}
 .container-2{
     position: relative;
 }
