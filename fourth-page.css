@@ -124,6 +124,13 @@ margin-top: 10px;
         }
      
         
+        .column{
+            position: relative;
+            width: 1200px;
+            display: flex;
+            justify-content: center;
+            animation: myframes cubic-bezier(.14,.13,.72,.75) 0s;
+        }
         .discount{
             width: 60%;
             background-color: transparent;
