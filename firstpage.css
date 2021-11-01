@@ -110,13 +110,14 @@ body{
 }
 .group{
     background-color: #fff;
-    margin: 10px;
+    margin: 5px;
     width: 100%;
     filter: brightness(85%);
     opacity: 0.9;
     box-shadow: 3px 3px 10px #d6d970;
     animation: myframes cubic-bezier(.14,.13,.72,.75) 4s;
     position: relative;
+ 
    
    
 }
