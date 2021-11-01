@@ -18,7 +18,7 @@
 
 .box1{
     margin: 50px;
-    width: 50%;
+    width: 40%;
     background:#ccd8b0;
     color: #556168;
     display: flex;
@@ -30,7 +30,7 @@
 }
 .box2{
     margin: 50px;
-    width: 50%;
+    width: 40%;
     background:#ccd8b0;
     color: #556168;
     display: flex;
@@ -43,7 +43,7 @@
 
 
 .picture {
-    width: 50%;
+    width: 40%;
     margin: 50px;
 }
 
@@ -59,6 +59,7 @@
     border-radius: 5%;
     overflow: hidden;
     margin-top: 100px;
+    
 }
 
 .coat img{

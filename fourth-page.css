@@ -11,15 +11,28 @@
 .container-box{
     max-width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content:center;
     background-color: #E8E8D0;
     height: auto; 
+   
+}
+
+.item p{
+    font-size: 20px;
+    color: #556168;
 }
 .column{
+    position: relative;
     width: 1200px;
     display: flex;
     justify-content: center;
-    
+    animation: myframes cubic-bezier(.14,.13,.72,.75) 1.5s;
+}
+
+@keyframes myframes{
+    0%{top: -200px;}
+    50%{top: -100px;}
+    100%{top: 0px;}
 }
 
 .sales{
@@ -31,10 +44,8 @@
     border-radius: 10%;
     justify-content: center;
     align-items: center;
-    transform: rotate(-15deg);
-    margin-left: 100px;
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 100px;
+    margin: 50px;
 }
 
 
@@ -47,11 +58,8 @@
     border-radius: 10%;
     justify-content: center;
     align-items: center;
-    transform: rotate(15deg);
-    z-index: 1;
-    margin-right: 100px;
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 100px;
+    margin: 50px;
 }
 
 .name{
@@ -123,10 +131,7 @@ margin-top: 10px;
             margin-right: auto;
             margin-top: 0px;
         }
-        .discount > h1{
-            transform: rotate(-15deg);
-            color: #556168;
-        }
+        
         .container{
             display: block;
         }

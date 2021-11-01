@@ -16,7 +16,9 @@ p{color: #556168;}
     align-items: center;
     justify-content: space-between;
     position: relative;
+   
 }
+
 
 .logo{
     margin:0px;
@@ -31,7 +33,7 @@ display: none;
 .hb{
     width: 45px;
     height: 45px;
-    background-color: #000;
+    background-color: #e0e0e0;
     display: flex;
     flex-direction: column;
     align-items: center;

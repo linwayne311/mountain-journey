@@ -9,6 +9,21 @@
     flex-wrap: wrap;
 }
 
+.myPhoto{
+    width: 80px;
+ 
+}
+
+#imgBoard{
+    border: 30px solid #ccc;
+    width: 60px;
+    background: #fff;
+    padding: 10px 10px;
+    position:absolute;
+    left: -110px;
+    margin-top: 30px;
+    
+}
 .container{
     display: flex;
     justify-content: center;
@@ -101,7 +116,7 @@ button{
     display: flex;
     justify-content: center;
     margin-top: 100px;
-    background-color: #E8E8D0;
+    background-color: #ccc;
 
 }
 
@@ -165,7 +180,7 @@ button{
     border-radius: 47% 53% 45% 55% / 43% 39% 61% 57% ;
 }
 .recycle > img:hover{
-    transform:scale(1.05,1.05);transition: all 2s ease-out;
+    transform:scale(1.2,1.2);transition: all 2s ease-out;
     
 }
 
@@ -231,7 +246,9 @@ button{
 
 
 @media screen and (max-width:1200px){
-
+    #imgBoard{
+        display: none;
+    }
 
     .container{
         display: flex;
@@ -420,7 +437,7 @@ button{
         margin-top: -30%;
     }
     .recycle > img:hover{
-        transform:scale(1.05,1.05);transition: all 1s ease-out;
+        transform:scale(1.04,1.04);transition: all 1s ease-out;
         
     }
     

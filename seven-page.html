@@ -8,13 +8,27 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="seven-page.css">
-<style>
-    
+    <script src="./jquery-3.6.0.js"></script>
+	<script src="./jquery-ui.js"></script>
+	<script>
+		$(function () {		
+			$('#imgBoard').mouseover().mouseout;
+		//$('#imgBoard').hover();
+		//$('#imgBoard').hover(function(){},function(){});
 
+		$('#imgBoard').hover(function(){
+			$(this).stop(true).animate({
+				left:'0px',
+			},1500,'easeInQuad');
+		},function(){
+			$(this).animate({
+				left:'-110px',
+			},2000,'easeOutBounce');
+		});
 
-
-</style>
-</head>
+		});			
+	</script>
+</head  >
 <body>
     <input type="checkbox" name="" id="menu-control">
 
@@ -62,7 +76,17 @@
                     </ol>
                 </div>
 
-   
+                <div id="imgBoard">
+                    <img src="jacket.png" class="myPhoto">
+                    <img src="jacket-4.png" class="myPhoto">
+                    <img src="women-jacket-3.png" class="myPhoto">
+                    <img src="women-jacket-4.png" class="myPhoto">
+                    <img src="plants-2.png" class="myPhoto">
+                    <img src="plants-4.png" class="myPhoto">
+                    <img src="women-plants-2.png" class="myPhoto">
+                    <img src="women-plants-4.png" class="myPhoto">
+                </div>
+
             <div class="container">
                 
                     <div class="column">
