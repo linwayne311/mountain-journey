@@ -178,7 +178,7 @@ text-decoration: underline 2px solid #556168;
     
        
      .text-1{
-         width: 50%;
+         width: 60%;
          max-width: 600px;
          padding: 0;
          margin-left: auto;
@@ -217,7 +217,7 @@ text-decoration: underline 2px solid #556168;
     
        
      .text-2{
-         width: 50%;
+         width: 60%;
          max-width: 600px;
          padding: 0;
          margin-left: auto;
@@ -232,7 +232,7 @@ text-decoration: underline 2px solid #556168;
      } 
     
      .text-2 h2{
-    text-decoration: underline 2px solid #556168;
+        text-decoration: underline 2px solid #556168;
      }
     
 
