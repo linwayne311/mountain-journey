@@ -6,42 +6,38 @@ body{
     
 }
 
-
-.container-1{
-    display: flex;
-    margin-top: 200px;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+.ourstory{
     text-align: center;
-   
-  
-   
+    font-size: 20px;
+    margin-top: 150px;
+    margin-bottom: -50px;
+}
+.row{
+    list-style: none;
+}
+.story-pic{
+    width: 100%;
    
 }
-.story-pic img{
-    vertical-align: middle;
-    border-radius: 5%;
-    margin: 10px;
+.story-pic > img{
+    width: 100%;
+    border-radius: 10%;
+    margin: 10px 0px;
 }
 
 .text{
-    border-radius: 5%;
-    color: #556168;
-    width: 600px;
-    height: auto;
-    background-color: #ccd8b0;
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 10px;
-
+    color: #556168;   
+    margin-top: 50px;
+    text-align: center;
 }
 
 .seemore > a >p{
     font-weight: bold;
 }
 .seemore{
-    width: 100px;
+    width: 80px;
+    text-align: center;
     border-radius: 10%;
     background-color: #d6d970;
     margin-left: auto;
@@ -89,15 +85,17 @@ body{
     
 }
 .category{
-    width: 1200px;
-    height: 500px;
+    max-width: 1200px;
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    margin-top: 100px;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     justify-content: space-evenly;
     align-items: center;
 }
+
+
 
 .row{
     list-style: none;
@@ -127,6 +125,15 @@ body{
     margin-bottom: -100px;
     margin-top: 100px;
     margin-left: 50px;
+    text-decoration: underline 2px
+    solid #556168;
+
+}
+.group-text2{
+    width: 100px;
+    margin-bottom: -100px;
+    margin-top: 100px;
+    margin-left: 50px;
     animation: myframes cubic-bezier(.14,.13,.72,.75) 4s;
     position: relative;
     text-decoration: underline 2px
@@ -148,86 +155,49 @@ body{
     width: 100%;
  
 }
-
-.container-3{
-    max-width: 1200px;
-    width: 100%;
-    margin-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-}
-.hope-2 img{
-    max-width: 600px;
-    height: 300px;
-    border-radius: 5%;
-    margin: 10px;
-
-}
-.hope{
-    width: 600px;
-    height: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color:#ccd8b0 ;
-    font-size: 20px;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 5%;
-    margin: 10px;
-
-
-}
-
-.hope > p{
-    font-family: Arial, Helvetica, sans-serif;
-    
-}
-
-
 @media screen and (max-width:1200px){
     
-
-.story-pic{
-   display: none;
-}
-
-
-.text{
-    color: #556168;
-    width: 100%;
-    height: auto;
-    background-color: #ccd8b0;
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -100px;
-}
-.seemore > a >p{
-    font-weight: bold;
-}
-
-/*---------------*/
-.title-2{
-    text-align: center;
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-
-}
-
-
 .category{
  display: none;
 }
 
+.ourstory{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 0px;
+    margin-bottom: -100px;
+}
+.row{
+    list-style: none;
+}
+.story-pic{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.story-pic > img{
+    display: block;
+    width: 100%;
+    border-radius: 10%;
+    margin: 20px 0px;
+}
 
+.text{
+    font-size: 16px;
+    color: #556168;   
+    margin-top: 50px;
+    text-align: center;
+}
 
 .group{
     margin-left: auto;
     margin-right: auto;
     animation: myframes cubic-bezier(.14,.13,.72,.75) 0.5s;
     width: 70%;
+}
+
+.group-text{
+    display: none;
 }
 .group img{
     display: block;
@@ -275,7 +245,7 @@ body{
     }
       
 
-    .group-text{
+    .group-text2{
         width: 100px;
         margin-bottom: -100px;
         margin-right: auto;
